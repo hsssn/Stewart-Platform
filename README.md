@@ -12,7 +12,6 @@ There are various designs with different arrangemetns for the servo motors, most
 The platform design showed in the implementation is not the best, mechanically, but it works as a first version.
 
 
-
 ## Parts
 - 6 MG995R Servos
 - PCA9685 Servo Driver
@@ -25,6 +24,9 @@ The platform design showed in the implementation is not the best, mechanically, 
 
 ## Inverse Kinematics and Maths
 For regural platforms using linear actuators, the inverse kinematics process is straight forward vector algebra that calculates the leg lengths needed to reach a specific position and orientation. When adding servo motors, the same lenghts are used and combined with some servo parameters to produce required servo angles. This process is elegantly described in [The Mathematics of The Steart Platform](https://web.archive.org/web/20130506134518/http://www.wokinghamu3a.org.uk/Maths%20of%20the%20Stewart%20Platform%20v5.pdf), and it also describes some basic concepts in robotics like rotation matrices. 
+
+![Screenshot (82)](https://github.com/user-attachments/assets/de17ec05-3a8d-432e-9647-8b4e3b63e7a5)
+
 
 
 ## Code
