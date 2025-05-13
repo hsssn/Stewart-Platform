@@ -19,7 +19,7 @@ BLA::Matrix<3,6, double> platform_points = {61.535, 72.769, 11.228, -11.228, -72
 
 const BLA::Matrix<1,6, double> beta = {PI/3, 7*PI/6, PI, 2*PI, 5*PI/3, 2*PI/3};
 BLA::Matrix<1,6, double> z = {0, 0, 0, 0, 0, 0}; // Variable used in calculating angles
-const double ldl = 75.0; // Servo Rod length.
+const double ldl = 89.0; // Servo Rod length.
 const double lhl =  24.0; // Servo arm length                               
 const BLA::Matrix<1,3, double> r_angles = {0,0, 0}; // Roll, Pitch, and Yaw angles, specified by the user.
 const BLA::Matrix<3,1, double> T = {0,0,0}; // Transformation of the platform, specified by the user.
