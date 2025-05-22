@@ -33,7 +33,7 @@ For regural platforms using linear actuators, the inverse kinematics process is 
 Before writing the code in Arduino's IDE, it is a good idea to quickly test how everything works. Pyhton was used in this process, and [this repo](https://github.com/Yeok-c/Stewart_Py) by [Yeok-C](https://github.com/Yeok-c) was very helpful in visulaising the result.
 The main Arduino code uses [BasicLinearAlgebra](https://github.com/tomstewart89/BasicLinearAlgebra) library, as well as [Adafruit_PWMServoDriver](https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library) library. It starts by defining base and platform points, as well as servo arm length and rod length. Then, the required leg lengths are calculated, and used to get the servo angles. The angles are then converted to PWMs to write and move the servos. 
 
-## Flaws Future Improvemets
-The flaws in the cureent implementation are mainly mechanical and related to the design, so another iterative design process is required to eleminate them.
+## Flaws and Future Improvemets
+The flaws in the cureent implementation are mainly mechanical and related to the design, so another iterative design process is required to eleminate them. The main one is the fact that ball joints are not very tight, and they allow for unwanted movement.
 This implementation serves as a base for future work. For now, the desired configuration is achieved by hard-coding it, but any input device like joysticks and potentiometers can be added easiely. 
 I plan to get inputs from any flight simulation software and use them to move the platform.
